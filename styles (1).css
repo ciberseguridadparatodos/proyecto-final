@@ -1,0 +1,172 @@
+:root {
+  --color-fondo: #581845;
+  --color-primario: #1f92c7;
+  --color-secundario: #ff6347;
+  --color-texto: #f1f2f2;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-fondo);
+  margin: 0;
+  color: var(--color-texto);
+}
+
+header {
+  background-color: var(--color-primario);
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 40px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-secundario);
+  padding: 10px 0;
+}
+
+.navbar button {
+  background-color: var(--color-secundario);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar button:hover {
+  background-color: #ff7f50;
+}
+
+.container {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.container.active {
+  display: block;
+}
+
+.producto {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.producto button {
+  margin-top: 10px;
+  background-color: var(--color-primario);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.agotado button {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+#loginTab {
+  display: block;
+}
+
+#navbar {
+  display: none;
+}
+
+#formPago {
+  margin-top: 20px;
+}
+
+.resultado-pago {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: #fff; 
+  padding: 20px;
+  border: 1px solid #000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: var(--color-primario);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.pedido-pago-container {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.pedido-pago-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pedido-pago-container li {
+  padding: 5px 0;
+}
+
+.formulario-tarjeta {
+  display: none;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.formulario-tarjeta input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formulario-tarjeta button {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
