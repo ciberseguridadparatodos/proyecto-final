@@ -19,14 +19,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
   
   header img {
     height: 80px;
+    margin-bottom: 10px;
   }
   
   h1 {
     margin: 0;
+    text-align: center;
   }
   
   .navbar {
